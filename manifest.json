@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Json Formatter",
+    "version": "1.0",
+    "description": "Formate your json within one click",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

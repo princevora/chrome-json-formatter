@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Developer Tools Suite</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <style>
+        body {
+            width: 400px;
+            height: 600px;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.49.0/min/vs/editor/editor.main.js"
+        integrity="sha512-00PJqbQihzTG0GtCJqQY5q9QYC37/ZEzFGdphTiebnXazBr/lKZmBLZn6fO3m+RLm/ZqjNw2TaCNKJEjdu+tiA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Paste your JSON Below</h1>
+            <div class="form-group">
+                <textarea id="json-input" placeholder=" " required></textarea>
+                <label for="json-input">JSON</label>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button class="arrow-button" id="submit">&#x2192;</button>
+            </div>
+        </div>
+
+        
+        <!-- Child card section -->
+        <!-- <div class="child-card"> -->
+            <div class="code-editor" id="editor" style="display: none;">
+            <span class="control"></span>
+            <span class="control"></span>
+            <span class="control"></span>
+            <pre class="line-numbers" title="Click me to copy to clipboard">
+                    <code class="language-css" style="cursor: pointer;" id="result">
+                    </code>
+                </pre>
+        </div>
+        <!-- </div> -->
+    </div>
+    <script src="popup.js" type="module"></script>
+    <script src="editor.js" type="module"></script>
+</body>
+
+</html>
